@@ -6,7 +6,7 @@ Some more material about SOMs [in this paper](https://dl.acm.org/citation.cfm?id
 ### Input Vectors
 
 <p align="center">
-<img src="result_plots/input.png" width="400px"/>
+<img src="result_plots/input.png" width="800px"/>
 </p>
 
 ### SOM Result
