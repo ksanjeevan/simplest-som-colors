@@ -1,9 +1,6 @@
-
-
 from scipy.spatial.distance import cdist, pdist
 import numpy as np
 import sys
-
 import matplotlib.pyplot as plt
 
 class SOMSolver:
@@ -25,9 +22,7 @@ class SOMSolver:
         self.n = len(self.x_train)
 
         self.weights = []
-
         self.som_train()
-        
 
 
     def som_train(self):
@@ -55,7 +50,6 @@ class SOMSolver:
             
         w = np.reshape(self.weights, (self.y_dim[1],self.y_dim[0],3))
         plot_som(w, 'fin.png')
-        
 
 
     def compute_loss(self):
@@ -135,8 +129,6 @@ class SOMSolver:
         return self.eta_0*np.exp(-t/self.tau_eta)
 
 
-
-
 def plot_som(data, filename):
     fig = plt.figure(figsize=(10, 10))
     ax = fig.add_subplot(111)
@@ -180,34 +172,4 @@ if __name__ == '__main__':
     plot_som(input_c, 'input.png')
 
     var = SOMSolver(colors, y_dim=(70,70), train_it=70000, params=None)
-
-
-
-
-
-
-
-    
-
-
-
-
-
-    
-
-
-
-
-
-    
-
-
-
-
-
-    
-
-
-
-
 
